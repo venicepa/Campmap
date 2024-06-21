@@ -2,6 +2,7 @@
 
 ## Local develop setting
 
+
 ### application-local.properties
 
 spring.datasource.url
