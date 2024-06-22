@@ -23,6 +23,11 @@ public class SampleController {
   @Autowired
   private SampleRepository sampleRepository;
 
+  @GetMapping("/health")
+  public String checkFine() {
+    return "Success!!";
+  }
+
   @GetMapping("/queryAll")
   public List<SampleEntity> queryAll() {
     return sampleRepository.findAll();
